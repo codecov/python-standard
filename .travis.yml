@@ -2,7 +2,7 @@ language: python
   script:
     - pytest
   install:
-    - pip install --user codecov
+    - pip install codecov
   env:
     - CODECOV_TOKEN="11412e01-7ed6-4d72-b438-d8a297eced21"
   after_success:
