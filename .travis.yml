@@ -2,6 +2,6 @@ language: python
 install:
   - pip install codecov
 script:
-  - pytest --cov=./
+  - pytest 
 after_success:
   - codecov -t CODECOV_TOKEN
