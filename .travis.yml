@@ -4,4 +4,4 @@ install:
 script:
   - pytest
 after_success:
-  - codecov -t CODECOV_TOKEN
+  - codecov
