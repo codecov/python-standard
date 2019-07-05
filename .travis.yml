@@ -3,5 +3,7 @@ language: python
     - pytest
   install:
     - pip install codecov
+  env:
+    - CODECOV_TOKEN="11412e01-7ed6-4d72-b438-d8a297eced21"
   after_success:
     - codecov -t CODECOV_TOKEN
