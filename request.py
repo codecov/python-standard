@@ -2,11 +2,12 @@
 import requests
 import urllib
 import time
+import os
 
-payload = {'token': '11412e01-7ed6-4d72-b438-d8a297eced21'}
+payload = {'token': os.environ['API_KEY']}
 link = 'https://codecov.io/api/gh/codecov/Python-Standard'
 
-time.sleep(60)
+#time.sleep(60)
 
 #get latest coverage data
 all_data = requests.get(link, params=payload).json()
