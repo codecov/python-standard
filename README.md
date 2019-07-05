@@ -1,6 +1,6 @@
 # Python-Standard
 
-[![Build Status](https://travis-ci.com/ibrahim0814/pystandard-draft.svg?token=rewUWiJS83nQXppCYk1a&branch=master)](https://travis-ci.com/ibrahim0814/pystandard-draft)
+[![TravisCI Build Status](https://travis-ci.com/ibrahim0814/pystandard-draft.svg?token=rewUWiJS83nQXppCYk1a&branch=master)](https://travis-ci.com/ibrahim0814/pystandard-draft)
 
 ## Purpose
 
@@ -18,9 +18,9 @@ If you would like to contribute your own language specific standard to codecov y
 
 1. Write a sample repository that contains Docker and docker-compose based orchestration for running your project easily locally
 2. Your project should be as simple as possible while providing and testing the following functions:
-    1. A function that is fully tested and covered by tests
-    2. A function that is not tested at all
-    3. A function that contains a conditional with a tested if and/or else condition. 
+    * A function that is fully tested and covered by tests
+    * A function that is not tested at all
+    * A function that contains a conditional with a tested if and/or else condition. 
 
 3. A TravisCI configuration that will run the tests and upload coverage to Codecov. 
 
