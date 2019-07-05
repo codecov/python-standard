@@ -5,5 +5,4 @@ install:
   - pip install pytest-cov
 script:
   - pytest --cov=./ --cov-report=xml --cov-report=html 
-after_success:
   - codecov

@@ -1,1 +1,1 @@
-!coverage.py: This is a private format, don't read it directly!{"lines":{"/Users/admin/Desktop/standard-python/index.py":[1,2,4,5,7,8,10,11,13],"/Users/admin/Desktop/standard-python/test_index.py":[1,2,4,5,7,8,10,11,13,14]}}
+!coverage.py: This is a private format, don't read it directly!{"lines":{"/Users/admin/Desktop/standard-python/index.py":[1,2,3,7,8,10],"/Users/admin/Desktop/standard-python/test_index.py":[1,2,4,5,7,8]}}
