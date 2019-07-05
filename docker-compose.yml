@@ -2,7 +2,7 @@ version: "3"
 services:
   python:
     image: codecov/standards-python:latest
-    build: .
+    build: ./
     volumes: 
       - index.py:/app/index.py
       - test_index.py:/app/text_index.py
@@ -15,38 +15,5 @@ volumes:
   test_index.py:
   coverage.xml:
       
-
-#1. write some code in index.py
-#2. write a test in test_index.py
-#3. run docker-compose up
-#4. see result, get coverage.xml in root dir
-#5. repeat
-
-# docker build -t thing/adfas:latest .
-# docker run
-# ..spit outs output
-# repeat
-
-
-# docker-compose up
-# see output...
-# docker-compose down (or ctrl+c, or the whole thing just dies when finished)
-
-
-#benefits of docker compose
-#1. live loading of code through volumes --> instant updates without rebuild
-#2. more clear output to console when pytest is running
-#3. faster execution times because not waiting for image builds.
-
-# other artifacts:
-# generate HTML or command line coverage output. Compare to codecov result.
-
-# write a function with an if statement, but not test that enters the if. 
-# write a function that's totally uncovered. write not tests for it (def full_unc)
-# write a function that's 100% covered. (name def fully_covered_function(): return True)
-
-#pytest example that outputs xml and html and test-results.xml
-#pytest --cov=./ --cov-report=xml --cov-report=html 
-
 
   
