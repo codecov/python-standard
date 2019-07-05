@@ -14,6 +14,8 @@ coverage_percentage = commit_data['totals']['c']
 
 #result should return 85.71429 as its coverage metric
 if(coverage_percentage == '85.71429'): 
+    print("success!")
     exit(0)
 else:
+    print("something is wrong")
     exit(1)
