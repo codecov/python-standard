@@ -1,6 +1,6 @@
 # Python-Standard
 
-[![TravisCI Build Status](https://travis-ci.com/ibrahim0814/pystandard-draft.svg?token=rewUWiJS83nQXppCYk1a&branch=master)](https://travis-ci.com/ibrahim0814/pystandard-draft)
+[![Build Status](https://travis-ci.org/codecov/Python-Standard.svg?branch=master)](https://travis-ci.org/codecov/Python-Standard)
 
 ### Last Updated: 07/03/19 19:46:08
 
