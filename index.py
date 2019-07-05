@@ -1,13 +1,12 @@
-def add(x,y):
-    return x+y
+def uncovered_if(var=True):
+    if var:
+      return False
+    else:
+      return True
 
-def subtract(x,y):
-    return x-y
+def fully_covered():
+    return True;
 
-def multiply(x,y):
-    return x*y
+def uncovered():
+    return True
 
-def divide(x,y):
-    if y==0:
-        raise ValueError('You are dividing by goose eggs!')
-    return x/y
