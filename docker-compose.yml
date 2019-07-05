@@ -4,11 +4,11 @@ services:
     image: codecov/standards-python:latest
     build: ./
     volumes: 
-      - index.py:/app/index.py
-      - test_index.py:/app/text_index.py
-      - coverage.xml:/app/coverage.xml
+      - ./index.py:/app/index.py
+      - ./test_index.py:/app/text_index.py
+      - ./coverage.xml:/app/coverage.xml
     command: >
-      sh -c "pytest --cov=./ --cov-report=xml --cov-report=html &&
+      bash -c "pytest --cov=./ --cov-report=xml --cov-report=html &&
              bash <(curl -s https://codecov.io/bash) -t 11412e01-7ed6-4d72-b438-d8a297eced21"
 volumes: 
   index.py:
