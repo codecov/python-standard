@@ -2,10 +2,11 @@
 import requests
 import urllib
 
-payload = {'token': '2604fdaf998b4196be55430e8cb2b7b9'}
-link = 'https://codecov.io/api/gh/ibrahim0814/codecov-test'
+payload = {'token': '11412e01-7ed6-4d72-b438-d8a297eced21'}
+link = 'https://codecov.io/api/gh/ibrahim0814/pystandard-draft'
 
 all_data = requests.get(link, params=payload).json()
+
 commit_data = all_data['commits'][0]
 
 coverage_percentage = commit_data['totals']['c']
