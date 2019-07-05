@@ -4,7 +4,7 @@ import urllib
 import time
 
 payload = {'token': '11412e01-7ed6-4d72-b438-d8a297eced21'}
-link = 'https://codecov.io/api/gh/ibrahim0814/pystandard-draft'
+link = 'https://codecov.io/api/gh/codecov/Python-Standard'
 
 time.sleep(60)
 
