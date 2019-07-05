@@ -1,5 +1,4 @@
 #testing to see if I can hit the CC API and return coverage stats
-
 import requests
 import urllib
 
@@ -11,4 +10,7 @@ commit_data = all_data['commits'][0]
 
 coverage_percentage = commit_data['totals']['c']
 
-print(coverage_percentage)
+if(int(coverage_percentage) == 100): 
+    exit(1)
+else:
+     exit(0)

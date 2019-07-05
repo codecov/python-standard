@@ -1,5 +1,7 @@
 # Python-Standard
 
+[![Build Status](https://travis-ci.com/ibrahim0814/pystandard-draft.svg?token=rewUWiJS83nQXppCYk1a&branch=master)](https://travis-ci.com/ibrahim0814/pystandard-draft)
+
 ## Purpose
 
 The purpose of this repository is to provide a simple, straightforward Python application that is covered by tests and submitted to codecov. This repository serves as Codecov's standard for Python coverage. Coverage reports for this repository are routinely passed to Codecov with the resulting coverage information checked for correctness. If the build is passing, then the coverage reported by Codecov is correct for this project, and indicates that generally our Python report processing is functional and correct on codecov.io. 
