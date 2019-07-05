@@ -1,7 +1,6 @@
 language: python
-  install:
-    - pip install codecov
-  script:
-    - pytest
-  after_success:
-    - codecov 
+install:
+  - pip install --user codecov
+script:
+  - pytest
+  - codecov
