@@ -3,5 +3,5 @@ install:
   - pip install codecov
 script:
   - pytest
-after_install:
+after_success:
   - codecov -t CODECOV_TOKEN
