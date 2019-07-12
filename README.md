@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/codecov/Python-Standard.svg?branch=master)](https://travis-ci.org/codecov/Python-Standard)
 
-### Last Updated: 07/12/19 21:02:31
+### Last Updated: 07/12/19 22:11:35
 
 ## Purpose
 
