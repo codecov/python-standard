@@ -10,7 +10,7 @@ This is a **Python** application, with basic unit tests, for which coverage is u
 
 ## Configuration
 
-This project is written in `Python 3.6`. Unit tests are written with the `pytest` framework and coverage reports are generated using `pytest-cov` plugin.
+This project is written in `Python 3.6`. Unit tests are written with the `pytest` framework and coverage reports are generated using the `pytest-cov` plugin.
 
 Unit tests: `/test_index.py`
 
