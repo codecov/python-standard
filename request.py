@@ -1,4 +1,5 @@
-#testing to see if I can hit the CC API and return coverage stats
+#Function: this is a python script that checks to see if coverage reported from the Codecov API is accurate
+
 import requests
 import time
 import os
