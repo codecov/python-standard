@@ -1,25 +1,28 @@
 #testing to see if I can hit the CC API and return coverage stats
 import requests
-import urllib
 import time
 import os
 
 payload = {'token': os.environ['API_KEY']}
+
 link = 'https://codecov.io/api/gh/codecov/Python-Standard'
 
-time.sleep(180)
+print("Waiting 60 seconds for report to upload before pinging API...")
 
+#night night
+time.sleep(60)
+
+print("Pinging Codecov's API..")
 #get latest coverage data
 all_data = requests.get(link, params=payload).json()
-
 commit_data = all_data['commits'][0]
-
 coverage_percentage = commit_data['totals']['c']
 
+print("Ensuring coverage percentage is accurate...")
 #result should return 85.71429 as its coverage metric
-if(coverage_percentage == '85.71429'): 
-    print("success!")
+if(coverage_percentage == os.environ['CORRECT_COVERAGE']): 
+    print("Success! Codecov's API returned the correct coverage percentage")
     exit(0)
 else:
-    print("something is wrong")
+    print("Whoops, something is wrong D: Codecov did not return the correct coverage percentage. Coverage percentage should be 82.35294 but Codecov returned "+coverage_percentage)
     exit(1)
