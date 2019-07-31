@@ -6,4 +6,5 @@ install:
 script:
   - pytest --cov=./ --cov-report=xml --cov-report=html 
   - bash <(curl -s https://www.codecov.io/bash) 
+  - cd src
   - python request.py

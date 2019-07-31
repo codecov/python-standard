@@ -4,14 +4,9 @@ services:
     image: codecov/standards-python:latest
     build: ./
     volumes: 
-      - ./index.py:/app/index.py
-      - ./test_index.py:/app/text_index.py
-      - ./coverage.xml:/app/coverage.xml
+      - ./src/index.py:/app/index.py
+      - ./src/test_index.py:/app/text_index.py
     command: ./entrypoint.sh
 volumes: 
   index.py:
   test_index.py:
-  coverage.xml:
-      
-
-  
