@@ -14,6 +14,27 @@ This project is written in `Python 3.6`. Unit tests are written with the `pytest
 
 Unit tests: `/test_index.py`
 
+## Usage
+
+Run unit tests inside a Docker container
+```
+docker-compose up
+```
+
+Generate coverage reports via `pytest`
+```
+pytest --cov=./ --cov-report=xml
+```
+
+Uploading reports to Codecov
+```
+bash <(curl https://codecov.io/bash)
+
+OR
+
+codecov # if installed with pip
+```
+
 ## Reporting Issues
 
 If you've discovered an issue with this repository or with Python processing in general, it is recommended to email support@codecov.io rather than post an issue here. This repository will not be checked regularly for open issues.
