@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/codecov/Python-Standard.svg?branch=master)](https://travis-ci.org/codecov/Python-Standard) [![codecov](https://codecov.io/gh/codecov/Python-Standard/branch/master/graph/badge.svg)](https://codecov.io/gh/codecov/Python-Standard)
 
-### Last Updated: 07/31/19 13:44:06
+### Last Updated: 07/31/19 13:44:48
 
 ## What is this?
 
