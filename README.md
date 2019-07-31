@@ -14,6 +14,16 @@ This project is written in `Python 3.6`. Unit tests are written with the `pytest
 
 Unit tests: `/test_index.py`
 
+Inside `.travis.yml` file:
+```
+install:
+  - pip install codecov
+  - pip install pytest-cov
+script:
+  - pytest --cov=./ --cov-report=xml
+  - codecov
+```
+
 ## Usage
 
 Run unit tests inside a Docker container
