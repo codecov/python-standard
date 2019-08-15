@@ -27,22 +27,23 @@ script:
 ## Usage
 
 Run unit tests inside a Docker container
-```
+```sh
 docker-compose up
 ```
 
 Generate coverage reports via `pytest`
-```
+```sh
 pytest --cov=./ --cov-report=xml
 ```
 
 Uploading reports to Codecov
-```
+```sh
 bash <(curl https://codecov.io/bash)
 
 OR
 
-codecov # if installed with pip
+pip install codecov
+codecov
 ```
 
 ## Reporting Issues
