@@ -15,7 +15,7 @@ This project is written in `Python 3.6`. Unit tests are written with the `pytest
 Unit tests: `/test_index.py`
 
 Inside `.travis.yml` file:
-```
+```yaml
 install:
   - pip install codecov
   - pip install pytest-cov
