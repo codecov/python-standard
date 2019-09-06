@@ -7,7 +7,7 @@ environment:
 
 install:
   - apt-get install python3-venv
-  - python3-venv -m venv env
+  - sudo python3-venv -m venv env
   - source ./env/bin/activate 
   - python -m pip install codecov
   - python -m pip install pytest-cov
