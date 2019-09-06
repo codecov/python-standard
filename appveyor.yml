@@ -11,3 +11,4 @@ install:
 
 test_script:
   - pytest --cov=./ --cov-report=xml
+  - printenv
