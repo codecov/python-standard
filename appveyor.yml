@@ -8,9 +8,10 @@ environment:
       stack: python 3
 
 install:
-  - sudo python -m pip install codecov
   - sudo python -m pip install pytest-cov
 
 test_script:
   - pytest --cov=./ --cov-report=xml
   - printenv
+  - bash <(curl -s https://codecov.io/bash)
+
