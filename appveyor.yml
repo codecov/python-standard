@@ -4,10 +4,12 @@ environment:
   matrix:
     - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
       stack: python 3
-      
+
 install:
-  - pip install codecov
-  - pip install pytest-cov
+  - python3 -m venv env
+  - source ./env/bin/activate 
+  - python -m pip install codecov
+  - python -m pip install pytest-cov
 
 test_script:
   - pytest --cov=./ --cov-report=xml
