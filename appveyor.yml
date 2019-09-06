@@ -13,5 +13,5 @@ install:
 test_script:
   - pytest --cov=./ --cov-report=xml
   - printenv
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -t c32fe4bc-6645-446e-b079-faeedcd18167
 
