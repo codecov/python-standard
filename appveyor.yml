@@ -2,8 +2,8 @@ build: false
 
 environment:
   matrix:
-    - PYTHON: "C:\\Python33"
-      PYTHON_VERSION: "3.3.5"
+    - PYTHON: "C:\\Python66"
+      PYTHON_VERSION: "3.6.1"
       PYTHON_ARCH: "32"
 
 init:
