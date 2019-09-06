@@ -10,8 +10,8 @@ init:
   - "ECHO %PYTHON% %PYTHON_VERSION% %PYTHON_ARCH%"
 
 install:
-  - "%PYTHON%/Scripts/pip.exe install nose"
-  - "%PYTHON%/Scripts/pip.exe install coverage"
+  - "%PYTHON%/Scripts/pip.exe install codecov"
+  - "%PYTHON%/Scripts/pip.exe install pytest-cov"
 
 test_script:
-  - "%PYTHON%/Scripts/nosetests"
+  - "%PYTHON%/Scripts/pytest --cov=./ --cov-report=xml"
