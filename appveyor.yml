@@ -2,16 +2,15 @@ build: false
 
 environment:
   matrix:
-    - PYTHON: "C:\\Python66"
-      PYTHON_VERSION: "3.6.1"
-      PYTHON_ARCH: "32"
+    - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
+      stack: python 3
 
 init:
   - "ECHO %PYTHON% %PYTHON_VERSION% %PYTHON_ARCH%"
 
 install:
-  - "%PYTHON%/Scripts/pip.exe install codecov"
-  - "%PYTHON%/Scripts/pip.exe install pytest-cov"
+  - pip install codecov
+  - pip install pytest-cov
 
 test_script:
-  - "%PYTHON%/Scripts/pytest --cov=./ --cov-report=xml"
+  - pytest --cov=./ --cov-report=xml
