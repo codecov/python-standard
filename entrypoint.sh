@@ -1,3 +1,3 @@
 #!/bin/sh
 
-pytest --cov=./ --cov-report=xml
+pip install pycobertura

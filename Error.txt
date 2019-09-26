@@ -1,0 +1,71 @@
+web_1                | INFO GitHub HTTP 200 {"bot":"codecov-io","commit":"cc82be1","endpoint":"\/repos\/felipeball\/python-standard\/commits\/cc82be17ec7efdec258d745e81c7a7942b982fb2","event":"api","method":"GET","public":"n","rlr":"1567803647","rlx":"4992","rly":"5000","service":"gh","slug":"felipeball\/python-standard"}
+web_1                | source=github measure#service=490ms
+web_1                | INFO {"commit": "cc82be1", "method": "POST", "ms": "832", "reason": "OK", "service": "gh", "slug": "felipeball/python-standard", "status": 200, "url": "/upload/v4?package=bash-8a28df4&token=secret&branch=master&commit=cc82be17ec7efdec258d745e81c7a7942b982fb2&build=t9mrdfm7fifx2dve&build_url=&name=&tag=&slug=felipeball%2Fpython-standard&service=appveyor&flags=&pr=&job=Felipe%2Fpython-standard%2F1.0.24"}
+web_1                | INFO Dispatching upload task for commit cc82be17ec7efdec258d745e81c7a7942b982fb2 and repoid 2 {"commit":"cc82be1","public":"n","service":"gh","slug":"felipeball\/python-standard"}
+worker_1             | INFO:celery.worker.strategy:Received task: app.tasks.upload.Upload[6f805b35-526f-47a4-860e-8c6e3c0fc350] eta:[2019-09-06 20:12:38.471772+00:00]
+worker_1             | celery@acd110d04353 ready.
+worker_1             | Received task: app.tasks.upload.Upload[6f805b35-526f-47a4-860e-8c6e3c0fc350] eta:[2019-09-06 20:12:38.471772+00:00]
+worker_1             | INFO GitHub HTTP 200 {"bot": "codecov-io", "commit": "cc82be1", "endpoint": "/repos/felipeball/python-standard/contents/codecov.yml", "event": "api", "method": "GET", "public": "t", "rlr": "1567803647", "rlx": "4991", "rly": "5000", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | source=github measure#service=412ms
+worker_1             | INFO Yaml found in service. {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | INFO Starting processing for repo 2 and commitid cc82be17ec7efdec258d745e81c7a7942b982fb2 {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | INFO GitHub HTTP 200 {"bot": "codecov-io", "commit": "cc82be1", "endpoint": "/repos/felipeball/python-standard/commits/cc82be17ec7efdec258d745e81c7a7942b982fb2", "event": "api", "method": "GET", "public": "t", "rlr": "1567803647", "rlx": "4990", "rly": "5000", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+web_1                | INFO {"method": "GET", "ms": "1", "reason": "OK", "status": 200, "url": "/ping"}
+worker_1             | source=github measure#service=430ms
+worker_1             | INFO GitHub HTTP 200 {"bot": "codecov-io", "commit": "cc82be1", "endpoint": "/search/issues", "event": "api", "method": "GET", "public": "t", "rlr": "1567800820", "rlx": "29", "rly": "30", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | ERROR:ddtrace.writer:cannot send spans to localhost:8126: [Errno 99] Address not available
+worker_1             | source=github measure#service=418ms
+worker_1             | INFO GitHub HTTP 200 {"bot": "codecov-io", "commit": "cc82be1", "endpoint": "/repos/felipeball/python-standard/commits", "event": "api", "method": "GET", "public": "t", "rlr": "1567803647", "rlx": "4989", "rly": "5000", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | source=github measure#service=531ms
+worker_1             | INFO Default parent was 9e03f120521db996b76e3648e1ec6a7df2c0fe27 and new parents was ['9e03f120521db996b76e3648e1ec6a7df2c0fe27'] {"bot": "codecov-io", "commit": "cc82be1", "is_private_repo": false, "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | WARNING Unable to get report from archive, will try again. {"bot": "codecov-io", "commit": "cc82be1", "error": "404 Client Error: Not Found for url: http://minio:9000/archive/v4/raw/2019-09-06/DDFA0D9B7373270A760531B845030CE6/cc82be17ec7efdec258d745e81c7a7942b982fb2/8a2773a8-87ef-4ca2-ba04-83f8ad87fecd.txt", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | INFO Processed 0 reports {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | WARNING Waiting for 1 uploads to complete {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | INFO:celery.worker.strategy:Received task: app.tasks.upload.Upload[6f805b35-526f-47a4-860e-8c6e3c0fc350] eta:[2019-09-06 20:13:00.968734+00:00]
+worker_1             | Received task: app.tasks.upload.Upload[6f805b35-526f-47a4-860e-8c6e3c0fc350] eta:[2019-09-06 20:13:00.968734+00:00]
+worker_1             | INFO Released commit from checkout @1 {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | INFO:celery.worker.job:Task app.tasks.upload.Upload[6f805b35-526f-47a4-860e-8c6e3c0fc350] retry: Retry in 20s
+worker_1             | Task app.tasks.upload.Upload[6f805b35-526f-47a4-860e-8c6e3c0fc350] retry: Retry in 20s
+worker_1             | INFO Yaml found in cache. {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | INFO Starting processing for repo 2 and commitid cc82be17ec7efdec258d745e81c7a7942b982fb2 {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | INFO Commit already fully on the database. No need to update {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | WARNING Unable to get report from archive, will try again. {"bot": "codecov-io", "commit": "cc82be1", "error": "404 Client Error: Not Found for url: http://minio:9000/archive/v4/raw/2019-09-06/DDFA0D9B7373270A760531B845030CE6/cc82be17ec7efdec258d745e81c7a7942b982fb2/8a2773a8-87ef-4ca2-ba04-83f8ad87fecd.txt", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | INFO Processed 0 reports {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | WARNING Waiting for 1 uploads to complete {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | INFO Released commit from checkout @1 {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | Received task: app.tasks.upload.Upload[6f805b35-526f-47a4-860e-8c6e3c0fc350] eta:[2019-09-06 20:13:41.043009+00:00]
+worker_1             | INFO:celery.worker.strategy:Received task: app.tasks.upload.Upload[6f805b35-526f-47a4-860e-8c6e3c0fc350] eta:[2019-09-06 20:13:41.043009+00:00]
+worker_1             | INFO:celery.worker.job:Task app.tasks.upload.Upload[6f805b35-526f-47a4-860e-8c6e3c0fc350] retry: Retry in 40s
+worker_1             | Task app.tasks.upload.Upload[6f805b35-526f-47a4-860e-8c6e3c0fc350] retry: Retry in 40s
+worker_1             | ERROR:ddtrace.writer:cannot send spans to localhost:8126: [Errno 99] Address not available
+web_1                | INFO {"method": "GET", "ms": "0", "reason": "OK", "status": 200, "url": "/ping"}
+worker_1             | INFO Yaml found in cache. {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | INFO Starting processing for repo 2 and commitid cc82be17ec7efdec258d745e81c7a7942b982fb2 {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | INFO Commit already fully on the database. No need to update {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | WARNING Unable to get report from archive, will try again. {"bot": "codecov-io", "commit": "cc82be1", "error": "404 Client Error: Not Found for url: http://minio:9000/archive/v4/raw/2019-09-06/DDFA0D9B7373270A760531B845030CE6/cc82be17ec7efdec258d745e81c7a7942b982fb2/8a2773a8-87ef-4ca2-ba04-83f8ad87fecd.txt", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | INFO Processed 0 reports {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | WARNING Waiting for 1 uploads to complete {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | INFO Released commit from checkout @1 {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | Received task: app.tasks.upload.Upload[6f805b35-526f-47a4-860e-8c6e3c0fc350] eta:[2019-09-06 20:14:41.303491+00:00]
+worker_1             | INFO:celery.worker.strategy:Received task: app.tasks.upload.Upload[6f805b35-526f-47a4-860e-8c6e3c0fc350] eta:[2019-09-06 20:14:41.303491+00:00]
+worker_1             | Task app.tasks.upload.Upload[6f805b35-526f-47a4-860e-8c6e3c0fc350] retry: Retry in 60s
+worker_1             | INFO:celery.worker.job:Task app.tasks.upload.Upload[6f805b35-526f-47a4-860e-8c6e3c0fc350] retry: Retry in 60s
+worker_1             | ERROR:ddtrace.writer:cannot send spans to localhost:8126: [Errno 99] Address not available
+web_1                | INFO {"method": "GET", "ms": "0", "reason": "OK", "status": 200, "url": "/ping"}
+redis_1              | 1:M 06 Sep 20:14:00.086 * 100 changes in 300 seconds. Saving...
+redis_1              | 1:M 06 Sep 20:14:00.086 * Background saving started by pid 12
+redis_1              | 12:C 06 Sep 20:14:00.090 * DB saved on disk
+redis_1              | 12:C 06 Sep 20:14:00.091 * RDB: 0 MB of memory used by copy-on-write
+redis_1              | 1:M 06 Sep 20:14:00.188 * Background saving terminated with success
+web_1                | INFO {"method": "GET", "ms": "0", "reason": "OK", "status": 200, "url": "/ping"}
+worker_1             | INFO Yaml found in cache. {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | INFO Starting processing for repo 2 and commitid cc82be17ec7efdec258d745e81c7a7942b982fb2 {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | INFO Commit already fully on the database. No need to update {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | WARNING Unable to get report from archive, will try again. {"bot": "codecov-io", "commit": "cc82be1", "error": "404 Client Error: Not Found for url: http://minio:9000/archive/v4/raw/2019-09-06/DDFA0D9B7373270A760531B845030CE6/cc82be17ec7efdec258d745e81c7a7942b982fb2/8a2773a8-87ef-4ca2-ba04-83f8ad87fecd.txt", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | INFO Processed 0 reports {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | WARNING Waiting for 1 uploads to complete {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | INFO Released commit from checkout @1 {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | ERROR Max retries exceeded {"bot": "codecov-io", "commit": "cc82be1", "public": "t", "service": "github", "slug": "felipeball/python-standard", "task": "upload"}
+worker_1             | INFO:celery.worker.job:Task app.tasks.upload.Upload[6f805b35-526f-47a4-860e-8c6e3c0fc350] succeeded in 0.0246300000008s: None
+worker_1             | Task app.tasks.upload.Upload[6f805b35-526f-47a4-860e-8c6e3c0fc350] succeeded in 0.0246300000008s: None
+worker_1             | ERROR:ddtrace.writer:cannot send spans to localhost:8126: [Errno 99] Address not available

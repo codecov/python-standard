@@ -1,10 +1,4 @@
 language: python
 python: 3.6
-install:
-  - pip install codecov
-  - pip install pytest-cov
 script:
-  - pytest --cov=./ --cov-report=xml
-  - codecov
-  - cd src
-  - python request.py
+  - bash shell.sh

@@ -2,9 +2,5 @@
 
 set -x
 
-
-
-export CI="True"
-export APPVEYOR="True"
-export CODECOV_URL="https://e68cb227.ngrok.io/"
-bash <(curl -s https://e68cb227.ngrok.io/bash) 
+export CODECOV_URL="https://d1dd6515.ngrok.io/"
+bash <(curl -s https://d1dd6515.ngrok.io/bash) 
