@@ -1,2 +1,4 @@
 ignore:
   - "request.py"
+comment:
+  after_n_builds: 4
