@@ -2,6 +2,7 @@ language: python
 python: 3.6
 install:
   - pip install pytest-cov
+  - pip install requests
 script:
   - pytest --cov=./ --cov-report=xml
   - bash <(curl https://codecov.io/bash)
