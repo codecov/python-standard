@@ -8,6 +8,3 @@ def test_uncovered_if():
 #     assert index.fully_covered() == True
 
 
-
-
-
