@@ -12,3 +12,6 @@ def uncovered():
 
 def anotherOne():
     return '( ႎ _ ႎ )'
+
+def anotherAnotherOne():
+    return '( ႎ _ ႎ ) ( ႎ _ ႎ )'
