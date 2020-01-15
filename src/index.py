@@ -16,5 +16,8 @@ def anotherOne():
 def anotherAnotherOne():
     return '( ႎ _ ႎ ) ( ႎ _ ႎ )'
 
+def anotherAnotherOne2():
+    return '( ႎ _ ႎ ) ( ႎ _ ႎ )'
+
 def anotherAnotherAnotherOne():
     return '( ႎ _ ႎ ) ( ႎ _ ႎ ) ( ႎ _ ႎ ) ( ႎ _ ႎ )'
