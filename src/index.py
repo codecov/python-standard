@@ -21,3 +21,6 @@ def anotherAnotherOne2():
 
 def anotherAnotherAnotherOne():
     return '( ႎ _ ႎ ) ( ႎ _ ႎ ) ( ႎ _ ႎ ) ( ႎ _ ႎ )'
+
+def stillUncovered():
+    return 'nothing to see here'
