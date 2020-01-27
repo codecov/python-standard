@@ -24,3 +24,6 @@ def anotherAnotherAnotherOne():
 
 def stillUncovered():
     return 'nothing to see here'
+
+def stillUncoveredTwo():
+    return 'nothing two see here'
