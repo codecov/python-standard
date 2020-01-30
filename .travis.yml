@@ -5,6 +5,6 @@ install:
   - pip install requests
 script:
   - pytest --cov=./ --cov-report=xml
-  - bash <(curl https://codecov.io/bash)
+  - ./codecov -t cc695539-bca7-435a-8627-2e629a1743a2 -u https://9a80980e.ngrok.io
   - cd src
   - python request.py
