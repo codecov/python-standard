@@ -26,4 +26,5 @@ def stillUncovered():
     return 'nothing to see here'
 
 def stillUncoveredTwo():
+    a = 1
     return 'nothing two see here'
