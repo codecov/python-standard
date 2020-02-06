@@ -27,4 +27,5 @@ def stillUncovered():
 
 def stillUncoveredTwo():
     a = 1
+    b = 2
     return 'nothing two see here'
