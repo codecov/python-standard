@@ -36,4 +36,5 @@ def stillUncoveredTwo():
     h = 8
     i = 9
     j = 10
+    k = 11
     return 'nothing two see here'
