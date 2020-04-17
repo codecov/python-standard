@@ -33,3 +33,13 @@ def stillUncoveredTwo():
     e = 564
     f = 234
     return 'nothing two see here'
+
+def uncovered1587140953():
+    a = 1
+    return
+
+
+def uncovered1587141215():
+    a = 1
+    return
+
