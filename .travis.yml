@@ -8,3 +8,5 @@ script:
   - bash <(curl https://codecov.io/bash)
   - cd src
   - python request.py
+  - cd ..
+  - ./upstream.sh
