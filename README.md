@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/codecov/Python-Standard.svg?branch=master)](https://travis-ci.org/codecov/Python-Standard) [![codecov](https://codecov.io/gh/codecov/Python-Standard/branch/master/graph/badge.svg)](https://codecov.io/gh/codecov/Python-Standard)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fpython-standard.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fpython-standard?ref=badge_shield)
 
-### Last Updated: 02/26/21 21:17:03
+### Last Updated: 02/27/21 21:18:22
 
 ## What is this?
 
