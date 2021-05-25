@@ -1,0 +1,30 @@
+name: Github Actions Python Standard
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+        uses: actions/checkout@v2
+      - name: Set up Python 3.6
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.6'
+      - name: Install dependencies
+        run: |
+          pip install pytest-cov
+          pip install requests
+      - name: Run Script
+        run: |
+          pytest --cov=./ --cov-report=xml
+          bash <(curl https://codecov.io/bash)
+          cd src
+          python request.py
+          cd ..
+          ./upstream.sh
