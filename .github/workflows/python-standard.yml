@@ -1,22 +1,14 @@
 name: Github Actions Python Standard
-
-on: [push]
-# on:
-#   push:
-#     branches:
-#       - master
-
+on: [push, pull_request]
 jobs:
-  build:
-
+  standard-upload:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Python 3.6
+      - name: Set up Python 3.9
         uses: actions/setup-python@v2
         with:
-          python-version: '3.6'
+          python-version: '3.9'
       - name: Install dependencies
         run: |
           pip install pytest-cov
@@ -29,3 +21,4 @@ jobs:
           python request.py
           cd ..
           ./upstream.sh
+          echo "Exited with '$?'"
