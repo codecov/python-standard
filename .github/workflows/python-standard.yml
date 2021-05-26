@@ -16,7 +16,7 @@ jobs:
       - name: Run Script
         env:
           API_KEY: ${{ secrets.API_KEY }}
-          CORRECT_COVERAGE: "85.71429"
+          CORRECT_COVERAGE: ${{ secrets.CORRECT_COVERAGE }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           pytest --cov=./ --cov-report=xml
