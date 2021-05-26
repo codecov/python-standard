@@ -24,6 +24,7 @@ jobs:
       - name: Run Script
         env:
           API_KEY: ${{ secrets.API_KEY }}
+          CORRECT_COVERAGE: "85.71429"
         run: |
           pytest --cov=./ --cov-report=xml
           bash <(curl https://codecov.io/bash)
