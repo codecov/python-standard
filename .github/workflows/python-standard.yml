@@ -1,5 +1,11 @@
 name: Github Actions Python Standard
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 jobs:
   standard-upload:
     runs-on: ubuntu-latest
