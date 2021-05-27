@@ -1,6 +1,6 @@
 # Python-Standard
 
-[![Build Status](https://travis-ci.org/codecov/Python-Standard.svg?branch=master)](https://travis-ci.org/codecov/Python-Standard) [![codecov](https://codecov.io/gh/codecov/Python-Standard/branch/master/graph/badge.svg)](https://codecov.io/gh/codecov/Python-Standard)
+[![Workflow for Python Standard Action](https://github.com/codecov/python-standard/actions/workflows/python-standard.yml/badge.svg)](https://github.com/codecov/python-standard/actions/workflows/python-standard.yml) [![codecov](https://codecov.io/gh/codecov/Python-Standard/branch/master/graph/badge.svg)](https://codecov.io/gh/codecov/Python-Standard)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fpython-standard.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fpython-standard?ref=badge_shield)
 
 ### Last Updated: 05/06/21 21:56:59
@@ -11,11 +11,11 @@ This is a **Python** application, with basic unit tests, for which coverage is u
 
 ## Configuration
 
-This project is written in `Python 3.6`. Unit tests are written with the `pytest` framework and coverage reports are generated using the `pytest-cov` plugin.
+This project is written in `Python 3.9`. Unit tests are written with the `pytest` framework and coverage reports are generated using the `pytest-cov` plugin.
 
 Unit tests: `/test_index.py`
 
-Inside `.travis.yml` file:
+Inside `.github/workflows/python-standard.yml` file:
 ```yaml
 install:
   - pip install codecov
