@@ -11,11 +11,11 @@ This is a **Python** application, with basic unit tests, for which coverage is u
 
 ## Configuration
 
-This project is written in `Python 3.6`. Unit tests are written with the `pytest` framework and coverage reports are generated using the `pytest-cov` plugin.
+This project is written in `Python 3.9`. Unit tests are written with the `pytest` framework and coverage reports are generated using the `pytest-cov` plugin.
 
 Unit tests: `/test_index.py`
 
-Inside `.travis.yml` file:
+Inside `.github/workflows/python-standard.yml` file:
 ```yaml
 install:
   - pip install codecov
