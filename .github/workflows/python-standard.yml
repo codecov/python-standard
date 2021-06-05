@@ -37,6 +37,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         if: ${{ github.event_name == 'push'}}
         run: |
-          wget --header "Authorization: token $GH_ACCESS_TOKEN" \
+          wget --header "Authorization: token ${GH_TOKEN}" \
           --header "Accept: application/vnd.github.v3.raw" \
           https://api.github.com/repos/codecov/standards/contents/upstream.sh?ref=adrian/add-upstream.sh | bash
