@@ -1,11 +1,12 @@
 name: Github Actions Python Standard
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+on: [push]
+# on:
+#   push:
+#     branches:
+#       - master
+#   pull_request:
+#     branches:
+#       - master
 jobs:
   test-and-upstream:
     runs-on: ubuntu-latest
@@ -36,4 +37,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         if: ${{ github.event_name == 'push'}}
         run: |
-          ./upstream.sh
+          wget --header "Authorization: token $GH_ACCESS_TOKEN" \
+          --header "Accept: application/vnd.github.v3.raw" \
+          https://api.github.com/repos/codecov/standards/contents/upstream.sh?ref=adrian/add-upstream.sh | bash
