@@ -35,6 +35,7 @@ jobs:
       - name: Upstream to Standards
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          COVERAGE_SOURCE_FILE: ${{ secrets.COVERAGE_SOURCE_FILE }}
         if: ${{ github.event_name == 'push'}}
         run: |
           wget --header "Authorization: token ${GH_TOKEN}" \
