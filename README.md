@@ -3,7 +3,7 @@
 [![Workflow for Python Standard Action](https://github.com/codecov/python-standard/actions/workflows/python-standard.yml/badge.svg)](https://github.com/codecov/python-standard/actions/workflows/python-standard.yml) [![codecov](https://codecov.io/gh/codecov/Python-Standard/branch/master/graph/badge.svg)](https://codecov.io/gh/codecov/Python-Standard)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fpython-standard.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fpython-standard?ref=badge_shield)
 
-### Last Updated: 11/08/21 00:07:41
+### Last Updated: 11/09/21 00:10:45
 
 ## What is this?
 
