@@ -7,6 +7,8 @@ def test_uncovered_if():
 def test_fully_covered():
     assert index.fully_covered() == True
 
+def test_uncovered_if2():
+    assert index.uncovered_if(False) == True
 
 
 
