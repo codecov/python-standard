@@ -12,3 +12,6 @@ def uncovered():
 
 def uncovered2():
   return True 
+
+def uncovered3():
+  return False
