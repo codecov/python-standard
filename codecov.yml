@@ -1,2 +1,6 @@
 ignore:
   - "request.py"
+
+comment:
+  layout: "newheader, diff, flags, files, newfooter"
+  hide_comment_details: true
