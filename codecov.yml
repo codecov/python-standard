@@ -3,6 +3,6 @@ ignore:
 
   
 comment:
-  layout: "diff, flags, files, feedback"
+  layout: "diff, flags, files"
   show_critical_paths: true
   hide_comment_details: true
