@@ -8,5 +8,7 @@ def test_fully_covered():
     assert index.fully_covered() == True
 
 
+def test_fully_coveredd():
+    assert index.fully_covered() == True
 
 
