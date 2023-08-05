@@ -24,6 +24,8 @@ Inside `.github/workflows/python-standard.yml` file:
 - name: Run Script
   run: |
     pytest --cov=./ --cov-report=xml
+- name: Upload to Codecov
+  uses: codecov/codecov-action@v3    
 ```
 
 ## Usage
