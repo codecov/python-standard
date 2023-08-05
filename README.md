@@ -17,12 +17,15 @@ Unit tests: `/test_index.py`
 
 Inside `.github/workflows/python-standard.yml` file:
 ```yaml
-install:
-  - pip install codecov
-  - pip install pytest-cov
-script:
-  - pytest --cov=./ --cov-report=xml
-  - codecov
+- name: Install dependencies
+  run: |
+    pip install pytest-cov
+    pip install requests
+- name: Run Script
+  run: |
+    pytest --cov=./ --cov-report=xml
+- name: Upload to Codecov
+  uses: codecov/codecov-action@v3    
 ```
 
 ## Usage
