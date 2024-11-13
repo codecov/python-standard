@@ -15,11 +15,11 @@ jobs:
         python-version: ["3.8", "3.9", "3.10", "3.11", "pypy3.9"]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5.0.0-beta
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.STANDARDS_TOKEN }}
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v5.0.0-beta
+        uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
