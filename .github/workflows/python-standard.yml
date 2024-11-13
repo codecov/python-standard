@@ -15,11 +15,11 @@ jobs:
         python-version: ["3.8", "3.9", "3.10", "3.11", "pypy3.9"]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5.0.0-beta
         with:
           token: ${{ secrets.STANDARDS_TOKEN }}
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5.0.0-beta
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
@@ -30,7 +30,7 @@ jobs:
         run: |
           pytest --cov=./ --cov-report=xml
       - name: Upload to Codecov
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5.0.0-beta
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_ORG_TOKEN }}
       - name: Check coverage values
