@@ -41,7 +41,6 @@ jobs:
           cd src
           python request.py
           cd ..
-
       - name: Upstream to Standards
         env:
           GH_TOKEN: ${{ secrets.STANDARDS_TOKEN }}
